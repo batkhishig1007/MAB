@@ -9,7 +9,7 @@ import { BlockchainService } from './services/blockchain.service';
 export class AppComponent implements OnInit {
   public blockchain;
   public showInfoMessage = true;
-
+  public sanal=0;
   constructor(private blockchainService: BlockchainService) {
     this.blockchain = blockchainService.blockchainInstance;
   }
