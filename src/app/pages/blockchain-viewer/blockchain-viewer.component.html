@@ -1,6 +1,6 @@
 <div class="container">
-	<h1>Blocks on chain</h1>
-	<p>Each card represents a block on the chain. Click on a block to see the transactions stored inside.</p>
+	<h1>Блокууд</h1>
+	<p>Доорхи карт бүрт блокуудыг харуулсан ба блок доторхи саналыг харахын тулд дээр нь дар.</p>
 </div>
 
 <div class="container" style="overflow-x: scroll;white-space: nowrap;">
@@ -15,7 +15,7 @@
 <br><br>
 
 <div class="container">
-	<h1>Transactions inside block {{ getBlockNumber(selectedBlock) }}</h1>
+	<h1>Блок {{ getBlockNumber(selectedBlock) }} дотор өгөгдсөн санал </h1>
 
 	<app-transactions-table
 		[transactions]="selectedBlock.transactions"
