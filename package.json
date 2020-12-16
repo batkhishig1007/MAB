@@ -25,6 +25,7 @@
     "core-js": "^2.6.5",
     "node-sass": "^4.12.0",
     "rxjs": "~6.5.3",
+    "sweetalert": "^2.1.2",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BlockchainService } from '../../services/blockchain.service';
+
 @Component({
   selector: 'app-blockchain-viewer',
   templateUrl: './blockchain-viewer.component.html',
@@ -42,5 +43,5 @@ export class BlockchainViewerComponent implements OnInit {
   getBlockNumber(block) {
     return this.blocks.indexOf(block) + 1;
   }
-  
+
 }

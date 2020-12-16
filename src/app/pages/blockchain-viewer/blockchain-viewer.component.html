@@ -7,12 +7,12 @@
 		<div class="card-body">
 		  <h5 class="card-title">Ц. Түмэндорж </h5>
 		</div>
-	
+
 		 <ul class="list-group list-group-flush">
 			<li class="list-group-item">
-				<span class="">Тухай:{{sanal}} </span>
+				<span class="" >Тухай: </span>
 				<br>
-	
+
 				<br>
 				<span class="">Авсан саналын тоо: </span>
 				<br>
@@ -23,12 +23,12 @@
 		<div class="card-body">
 		  <h5 class="card-title">Ч. Мөнхдөлгөөн </h5>
 		</div>
-	
+
 		 <ul class="list-group list-group-flush">
 			<li class="list-group-item">
 				<span class="">Тухай: </span>
 				<br>
-	
+
 				<br>
 				<span class="">Авсан саналын тоо: </span>
 				<br>
@@ -39,14 +39,14 @@
 		<div class="card-body">
 		  <h5 class="card-title">А. Бат </h5>
 		</div>
-	
+
 		 <ul class="list-group list-group-flush">
 			<li class="list-group-item">
 				<span class="">Тухай: </span>
 				<br>
-	
+
 				<br>
-				<span class="">Авсан саналын тоо: </span>
+				<span class="">Авсан саналын тоо: {{blocks.length}}</span>
 				<br>
 			</li>
 		  </ul>
@@ -59,9 +59,9 @@
 </div>
 
 <div class="container" style="overflow-x: scroll;white-space: nowrap;">
-	<app-block-view 
-		*ngFor="let block of blocks" 
-		[block]="block" 
+	<app-block-view
+		*ngFor="let block of blocks"
+		[block]="block"
 		[selectedBlock]="selectedBlock"
 		(click)="showTransactions(block)"
 	></app-block-view>
