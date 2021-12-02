@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BlockchainService } from '../../services/blockchain.service';
 
+
 @Component({
   selector: 'app-transactions-table',
   templateUrl: './transactions-table.component.html',

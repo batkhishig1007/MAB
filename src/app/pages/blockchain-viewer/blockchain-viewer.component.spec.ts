@@ -13,6 +13,7 @@ describe('BlockchainViewerComponent', () => {
     .compileComponents();
   }));
 
+  
   beforeEach(() => {
     fixture = TestBed.createComponent(BlockchainViewerComponent);
     component = fixture.componentInstance;

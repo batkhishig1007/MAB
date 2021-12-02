@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BlockViewComponent } from './block-view.component';
 
+
 describe('BlockViewComponent', () => {
   let component: BlockViewComponent;
   let fixture: ComponentFixture<BlockViewComponent>;

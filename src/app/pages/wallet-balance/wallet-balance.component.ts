@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BlockchainService } from '../../services/blockchain.service';
 
+
 @Component({
   selector: 'app-wallet-balance',
   templateUrl: './wallet-balance.component.html',

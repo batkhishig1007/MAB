@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'wallet/:address', component: WalletBalanceComponent },
 ];
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { BlockchainService, IWalletKey } from '../../services/blockchain.service';
 import { Transaction } from 'SavjeeCoin/src/blockchain';
 

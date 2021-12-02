@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { BlockchainService } from '../../services/blockchain.service';
 
+
 @Component({
   selector: 'app-pending-transactions',
   templateUrl: './pending-transactions.component.html',
