@@ -1,13 +1,16 @@
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" routerLink="/">
-    
-    &nbsp;Санал хураах систем
-  </a>
+  <a class="navbar-brand" routerLink="/"> &nbsp;Санал хураах систем </a>
 
   <div>
-    <button routerLink="/new/vote/pending" class="btn btn-outline-light" *ngIf="thereArePendingTransactions()">
+    <button
+      routerLink="/new/vote/pending"
+      class="btn btn-outline-light"
+      *ngIf="thereArePendingTransactions()"
+    >
       Хүлээгдэж буй санал
-      <span class="badge badge-light">{{blockchain.pendingTransactions.length}}</span>
+      <span class="badge badge-light">{{
+        blockchain.pendingTransactions.length
+      }}</span>
     </button>
     &nbsp;
     <!-- <button routerLink="/settings" class="btn btn-outline-light">
@@ -20,15 +23,22 @@
   </div>
 </nav>
 
-<br>
+<br />
 
 <div class="container" *ngIf="showInfoMessage === true">
   <div class="alert alert-primary alert-dismissible fade show" role="alert">
     <h4 class="alert-heading">Вебийн тухай</h4>
-    Уг вебийг Монгол Улсын Их Сургуулын Мэдээллийн аюулгүй байдал хичээлийн хүрээнд хийж гүйцэтгэсэн болно.
-    <hr>
-    
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="dismissInfoMessage()">
+    Уг вебийг Монгол Улсын Их Сургуулын Мэдээллийн аюулгүй байдал хичээлийн
+    хүрээнд хийж гүйцэтгэсэн болно.
+    <hr />
+
+    <button
+      type="button"
+      class="close"
+      data-dismiss="alert"
+      aria-label="Close"
+      (click)="dismissInfoMessage()"
+    >
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -36,7 +46,9 @@
 
 <router-outlet></router-outlet>
 
-<footer class="text-muted text-center" style="margin-top: 150px;">
-  <small>Монгол Улсын Их Сургууль<br>
-  2020 он</small>
+<footer class="text-muted text-center" style="margin-top: 150px">
+  <small
+    >Монгол Улсын Их Сургууль<br />
+    2021 он</small
+  >
 </footer>

@@ -1,79 +1,81 @@
 <div class="container">
-	<h1>Санал өгөх сонголтууд</h1>
-	<p>Доорхи сонголтуудын аль нэгэн дээр дарж саналаа өгнө үү.</p>
+  <h1>Санал өгөх сонголтууд</h1>
+  <p>Доорхи сонголтуудын аль нэгэн дээр дарж саналаа өгнө үү.</p>
 </div>
-<div class="container" style="overflow-x: scroll;white-space: nowrap;">
-	<div class="card" routerLink="/new/vote">
-		<div class="card-body">
-		  <h5 class="card-title">Ц. Түмэндорж </h5>
-		</div>
+<div class="container" style="overflow-x: scroll; white-space: nowrap">
+  <div class="card" routerLink="/new/vote">
+    <div class="card-body">
+      <h5 class="card-title">Батхишиг</h5>
+    </div>
 
-		 <ul class="list-group list-group-flush">
-			<li class="list-group-item">
-				<span class="" >Тухай: </span>
-				<br>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <span class="">Тухай: </span>
+        <br />
 
-				<br>
-				<span class="">Авсан саналын тоо: 1 </span>
-				<br>
-			</li>
-		  </ul>
-	  </div>
-	  <div class="card" routerLink="/new/vote" >
-		<div class="card-body">
-		  <h5 class="card-title">Ч. Мөнхдөлгөөн </h5>
-		</div>
+        <br />
+        <span class="">Авсан саналын тоо: 2 </span>
+        <br />
+      </li>
+    </ul>
+  </div>
+  <div class="card" routerLink="/new/vote">
+    <div class="card-body">
+      <h5 class="card-title">Ундармаа</h5>
+    </div>
 
-		 <ul class="list-group list-group-flush">
-			<li class="list-group-item">
-				<span class="">Тухай: </span>
-				<br>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <span class="">Тухай: </span>
+        <br />
 
-				<br>
-				<span class="">Авсан саналын тоо: 3 </span>
-				<br>
-			</li>
-		  </ul>
-	  </div>
-	  <div class="card" routerLink="/new/vote">
-		<div class="card-body">
-		  <h5 class="card-title">А. Бат </h5>
-		</div>
+        <br />
+        <span class="">Авсан саналын тоо: 3 </span>
+        <br />
+      </li>
+    </ul>
+  </div>
+  <div class="card" routerLink="/new/vote">
+    <div class="card-body">
+      <h5 class="card-title">Хүрэлсүх</h5>
+    </div>
 
-		 <ul class="list-group list-group-flush">
-			<li class="list-group-item">
-				<span class="">Тухай: </span>
-				<br>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <span class="">Тухай: </span>
+        <br />
 
-				<br>
-				<span class="">Авсан саналын тоо: {{blocks.length}}</span>
-				<br>
-			</li>
-		  </ul>
-	  </div>
+        <br />
+        <span class="">Авсан саналын тоо: {{ blocks.length }}</span>
+        <br />
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div class="container">
-	<h1>Блокууд</h1>
-	<p>Доорхи карт бүрт блокуудыг харуулсан ба блок доторхи саналыг харахын тулд дээр нь дар.</p>
+  <h1>Блокууд</h1>
+  <p>
+    Доорхи карт бүрт блокуудыг харуулсан ба блок доторхи саналыг харахын тулд
+    дээр нь дар.
+  </p>
 </div>
 
-<div class="container" style="overflow-x: scroll;white-space: nowrap;">
-	<app-block-view
-		*ngFor="let block of blocks"
-		[block]="block"
-		[selectedBlock]="selectedBlock"
-		(click)="showTransactions(block)"
-	></app-block-view>
+<div class="container" style="overflow-x: scroll; white-space: nowrap">
+  <app-block-view
+    *ngFor="let block of blocks"
+    [block]="block"
+    [selectedBlock]="selectedBlock"
+    (click)="showTransactions(block)"
+  ></app-block-view>
 </div>
 
-<br><br>
+<br /><br />
 
 <div class="container">
-	<h1>Блок {{ getBlockNumber(selectedBlock) }} дотор өгөгдсөн санал </h1>
+  <h1>Блок {{ getBlockNumber(selectedBlock) }} дотор өгөгдсөн санал</h1>
 
-	<app-transactions-table
-		[transactions]="selectedBlock.transactions"
-	></app-transactions-table>
+  <app-transactions-table
+    [transactions]="selectedBlock.transactions"
+  ></app-transactions-table>
 </div>
-

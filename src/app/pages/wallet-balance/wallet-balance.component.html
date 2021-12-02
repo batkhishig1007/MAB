@@ -1,24 +1,24 @@
 <div class="container">
-	<h1>Санал асуулгын мэдээлэл</h1>
+  <h1>Санал асуулгын мэдээлэл</h1>
 
-	<p style="word-wrap:break-word;">
-		<strong>Хэнд</strong>
-		<br>
-		{{walletAddress}}
-	</p>
+  <p style="word-wrap: break-word">
+    <strong>Хэнд</strong>
+    <br />
+    {{ walletAddress }}
+  </p>
 
-<!--	<p>-->
-<!--		<strong>Balance:</strong>-->
-<!--		<br>-->
-<!--		{{ balance }}-->
-<!--	</p>-->
+  <!--	<p>-->
+  <!--		<strong>Balance:</strong>-->
+  <!--		<br>-->
+  <!--		{{ balance }}-->
+  <!--	</p>-->
 
-	<hr>
+  <hr />
 
-	<h1>Санал асуулга</h1>
-	<p *ngIf="transactions.length === 0">Санал асуулга хоосон байна</p>
-	<app-transactions-table
-		[transactions]="transactions"
-		*ngIf="transactions.length > 0"
-	></app-transactions-table>
+  <h1>Санал асуулга</h1>
+  <p *ngIf="transactions.length === 0">Санал асуулга хоосон байна</p>
+  <app-transactions-table
+    [transactions]="transactions"
+    *ngIf="transactions.length > 0"
+  ></app-transactions-table>
 </div>
