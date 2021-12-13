@@ -1,58 +1,79 @@
-<div class="container">
-  <h1>Санал өгөх сонголтууд</h1>
-  <p>Доорхи сонголтуудын аль нэгэн дээр дарж саналаа өгнө үү.</p>
+<div class="container" style="padding: 30px">
+  <h1>Нэр дэвшигчдийн сонголтууд</h1>
+  <p>Дараах нэр дэвшигчдээс аль нэгэн дээр дарж саналаа өгнө үү.</p>
 </div>
-<div class="container" style="overflow-x: scroll; white-space: nowrap">
+<div class="container">
   <div class="card" routerLink="/new/vote">
-    <div class="card-body">
-      <h5 class="card-title">Батхишиг</h5>
+    <div class="card-body" style="background-color: #3755ca">
+      <h5 class="card-title">У.Хүрэлсүх</h5>
     </div>
-
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        <span class="">Тухай: </span>
+        <span class=""
+          ><b>Нэр дэвшигч:</b>
+          Монгол Ардын Нам
+        </span>
         <br />
         <br />
-        <span class="">Авсан саналын тоо: 2 </span>
+        <span class=""><b>Авсан саналын тоо:</b> 2 </span>
         <br />
+        <button
+          routerLink="/new/vote"
+          class="btn btn-outline-light"
+          style="margin-top: 30px; margin-left: 70px"
+        >
+          Санал өгөх
+        </button>
       </li>
     </ul>
   </div>
   <div class="card" routerLink="/new/vote">
-    <div class="card-body">
-      <h5 class="card-title">Ундармаа</h5>
+    <div class="card-body" style="background-color: #3755ca">
+      <h5 class="card-title">Д.Энхбат</h5>
     </div>
 
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        <span class="">Тухай: </span>
+        <span class=""><b>Нэр дэвшигч:</b> Зөв Хүн Электорат Эвсэл </span>
         <br />
-
         <br />
-        <span class="">Авсан саналын тоо: 3 </span>
+        <span class=""><b>Авсан саналын тоо:</b> {{ blocks.length }}</span>
         <br />
+        <button
+          routerLink="/new/vote"
+          class="btn btn-outline-light"
+          style="margin-top: 30px; margin-left: 70px"
+        >
+          Санал өгөх
+        </button>
       </li>
     </ul>
   </div>
   <div class="card" routerLink="/new/vote">
-    <div class="card-body">
-      <h5 class="card-title">Хүрэлсүх</h5>
+    <div class="card-body" style="background-color: #3755ca">
+      <h5 class="card-title">С.Эрдэнэ</h5>
     </div>
-
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        <span class="">Тухай: </span>
+        <span class=""><b>Нэр дэвшигч:</b> Ардчилсан Нам </span>
         <br />
-
         <br />
-        <span class="">Авсан саналын тоо: {{ blocks.length }}</span>
         <br />
+        <span class=""><b>Авсан саналын тоо:</b> 2</span>
+        <br />
+        <button
+          routerLink="/new/vote"
+          class="btn btn-outline-light"
+          style="margin-top: 30px; margin-left: 70px"
+        >
+          Санал өгөх
+        </button>
       </li>
     </ul>
   </div>
 </div>
 
-<div class="container">
+<div class="container" style="padding: 30px">
   <h1>Блокууд</h1>
   <p>
     Доорхи карт бүрт блокуудыг харуулсан ба блок доторхи саналыг харахын тулд

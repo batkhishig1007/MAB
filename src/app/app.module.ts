@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlockViewComponent } from './components/block-view/block-view.component';
 import { BlockchainViewerComponent } from './pages/blockchain-viewer/blockchain-viewer.component';
-
 import { BlockchainService } from './services/blockchain.service';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { TransactionsTableComponent } from './components/transactions-table/transactions-table.component';

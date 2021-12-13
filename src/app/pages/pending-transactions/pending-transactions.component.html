@@ -1,12 +1,12 @@
 <div class="container">
   <div class="alert alert-success" role="alert" *ngIf="justAddedTx">
-    Transaction created successfully!
+    Санал амжилттай үүслээ!
   </div>
 
-  <h1>Pending transactions</h1>
+  <h1>Хүлээгдэж буй санал хураалт</h1>
   <p>
-    These transactions are waiting to be included in the next block. Next block
-    is created when you start the mining process.
+    Энэхүү санал дараагийн блокт оруулахыг хүлээж байна. Майнинг процессыг
+    эхлүүлэх үед дараагийн блок бий болно.
   </p>
 
   <app-transactions-table [transactions]="pendingTransactions">
@@ -17,8 +17,8 @@
     *ngIf="pendingTransactions.length > 0 && miningInProgress === false"
     (click)="minePendingTransactions()"
   >
-    Start mining
+    Зөвшөөрөх
   </button>
 
-  <div *ngIf="miningInProgress === true">Mining block.. Hang on...</div>
+  <div *ngIf="miningInProgress === true">Майнинг блок...</div>
 </div>
